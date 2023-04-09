@@ -3,11 +3,11 @@ Enable i2c on Raspberry via Config.
 Requiments Rpi.GPIO in custom componets.
 
 /configuration.yaml  
-  - platform: bme280_new_c # bme280_original_c  
-    name: Bathroom  
-    i2c_address: 0x76 # Address of BME280  
-    i2c_channel: 4 # Channel on Multiplexer  
-    operation_mode: 2 # 2 forced mode  
+  - platform: bme280_new_c
+    name: SensorName  
+    i2c_address: 0x76     # Address of BME280  
+    i2c_channel: 4        # Channel on Multiplexer  
+    operation_mode: 2     # 2 forced mode  
     time_standby: 5  
     oversampling_temperature: 4  
     oversampling_pressure: 4  
