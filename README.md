@@ -5,7 +5,7 @@ Requiments Rpi.GPIO in custom componets.
 /configuration.yaml
 sensor:
   - platform: bme280_new_c # bme280_original_c
-    name: ANy id
+    name: 
     i2c_address: 0x76 # Address of BME280
     i2c_channel: 4 # Channel on Multiplexer
     operation_mode: 2 # 2 forced mode
