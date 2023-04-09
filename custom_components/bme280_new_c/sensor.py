@@ -53,6 +53,7 @@ DEFAULT_T_STANDBY = 5  # Tstandby 5ms
 DEFAULT_FILTER_MODE = 0  # Filter off
 DEFAULT_DELTA_TEMP = 0.0
 
+# Channel of I2C Multiplexer to Read
 CONF_CHANNEL_DISABLED = -1
 CONF_CHANNEL_0 = 1
 CONF_CHANNEL_1 = 2
