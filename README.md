@@ -1,8 +1,10 @@
 # HASS-BME-Multiplexor.
 Enable i2c on Raspberry via Config. 
+
 Requiments Rpi.GPIO in custom componets. 
-/nl
+
 /configuration.yaml
+
 sensor:
   - platform: bme280_new_c # bme280_original_c
     name: 
