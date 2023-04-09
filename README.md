@@ -1,6 +1,6 @@
-# HASS-BME-Multiplexor.
-Enable i2c on Raspberry via Config.  
-Requiments Rpi.GPIO in custom componets.
+# HASS-BME-Multiplexor. Used on Raspberry Pi 3
+Enable i2c on Raspberry.  https://www.home-assistant.io/common-tasks/os#enable-i2c  
+Requiments Rpi.GPIO in custom componets. https://github.com/thecode/ha-rpi_gpio  
 
 /configuration.yaml  
   - platform: bme280_new_c
