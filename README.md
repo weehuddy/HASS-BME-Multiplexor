@@ -18,3 +18,53 @@ Requiments Rpi.GPIO in custom componets. https://github.com/thecode/ha-rpi_gpio
       - humidity  
       - pressure  
     scan_interval: 60  
+
+
+Add to configuration.yaml  bme280_multiplexer: 'python3 /config/python_scripts/multi_bme280/bme280_multiplexer.py' 
+
+
+i2c multplexer channel = 4, bme Sensor 0x76
+sensor_4_0x76']['humidity']
+
+command_line:
+  - sensor: 
+      name: BME 280 Pressure Sensor 
+      command: "cat /config/python_scripts/multi_bme280/sensor_data.json"
+      value_template: "{{ value_json['sensor_4_0x76']['pressure'] }}"
+      unit_of_measurement: "hPa"
+      scan_interval: 10
+    
+  - sensor: 
+      name: BME 280 Humidity Sensor 
+      command: "cat /config/python_scripts/multi_bme280/sensor_data.json"
+      value_template: "{{ value_json['sensor_4_0x76']['humidity'] }}"
+      unit_of_measurement: "%"
+      scan_interval: 10
+  
+  - sensor:
+      name: BME 280 Temperature Sensor 
+      command: "cat /config/python_scripts/multi_bme280/sensor_data.json"
+      value_template: "{{ value_json['sensor_4_0x77']['temperature'] }}"
+      unit_of_measurement: "°C"
+      scan_interval: 10
+    ### Channel 5, BME = 0x76
+  - sensor: 
+      name: BME 280 Pressure Sensor 
+      command: "cat /config/python_scripts/multi_bme280/sensor_data.json"
+      value_template: "{{ value_json['sensor_5_0x76']['pressure'] }}"
+      unit_of_measurement: "hPa"
+      scan_interval: 10
+    
+  - sensor: 
+      name: BME 280 Humidity Sensor 
+      command: "cat /config/python_scripts/multi_bme280/sensor_data.json"
+      value_template: "{{ value_json['sensor_5_0x76']['humidity'] }}"
+      unit_of_measurement: "%"
+      scan_interval: 10
+  
+  - sensor:
+      name: BME 280 Temperature Sensor 
+      command: "cat /config/python_scripts/multi_bme280/sensor_data.json"
+      value_template: "{{ value_json['sensor_5_0x77']['temperature'] }}"
+      unit_of_measurement: "°C"
+      scan_interval: 10
