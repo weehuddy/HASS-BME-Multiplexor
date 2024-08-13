@@ -2,24 +2,6 @@
 Enable i2c on Raspberry.  https://www.home-assistant.io/common-tasks/os#enable-i2c  
 Requiments Rpi.GPIO in custom componets. https://github.com/thecode/ha-rpi_gpio  
 
-
-  - platform: bme280_new_c
-    name: SensorName  
-    i2c_address: 0x76     # Address of BME280  
-    i2c_channel: 4        # Channel on Multiplexer  
-    operation_mode: 2     # 2 forced mode  
-    time_standby: 5  
-    oversampling_temperature: 4  
-    oversampling_pressure: 4  
-    oversampling_humidity: 4  
-    delta_temperature: -2  
-    monitored_conditions:  
-      - temperature  
-      - humidity  
-      - pressure  
-    scan_interval: 60  
-
-
 Add to configuration.yaml  bme280_multiplexer: 'python3 /config/python_scripts/multi_bme280/bme280_multiplexer.py' 
 
 
