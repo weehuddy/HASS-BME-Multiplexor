@@ -1,12 +1,13 @@
 # HASS-BME-Multiplexor. Used on Raspberry Pi 3
-i2c Multiplexr 7 channels to pull 14 x BME280 sensors 
+I2C Multiplexr 7 channels to pull 14 x BME280 sensors 
+
 Enable i2c on Raspberry.  https://www.home-assistant.io/common-tasks/os#enable-i2c  
 Requiments Rpi.GPIO in custom componets. https://github.com/thecode/ha-rpi_gpio  
 
 Add to configuration.yaml  bme280_multiplexer: 'python3 /config/python_scripts/multi_bme280/bme280_multiplexer.py' 
 
 
-i2c multplexer channel = 4, bme Sensor 0x76
+#i2c Channel 4  BME280 Sensor 0x76
 sensor_4_0x76']['humidity']
 
 bme280_multiplexer: 'python3 /config/python_scripts/multi_bme280/bme280_multiplexer.py' 
