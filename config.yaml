@@ -1,0 +1,12 @@
+# config.yaml
+multiplexer:
+  i2c_bus: 1  # Use I2C bus 1, which is common on Raspberry Pi
+  multiplexer_address: 0x70  # Default I2C address for the TCA9548A multiplexer
+  debug:   # Enable debug logging for detailed output
+  sensors:
+    - channel: 4  # Channel number on the multiplexer (0-7)
+      address: 0x76  # I2C address of the BME280 sensor
+    - channel: 4  # Channel number on the multiplexer (0-7)
+      address: 0x77  # I2C address of the BME280 sensor
+    - channel: 5  # Channel number on the multiplexer (0-7)
+      address: 0x76  # I2C address of the BME280 sensor

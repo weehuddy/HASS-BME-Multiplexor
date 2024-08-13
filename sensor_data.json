@@ -1,0 +1,17 @@
+{
+    "sensor_4_0x76": {
+        "temperature": 20.85,
+        "pressure": "996.19",
+        "humidity": "26.69"
+    },
+    "sensor_4_0x77": {
+        "temperature": 20.82,
+        "pressure": "995.11",
+        "humidity": "34.31"
+    },
+    "sensor_5_0x76": {
+        "temperature": 21.2,
+        "pressure": "995.86",
+        "humidity": "31.11"
+    }
+}
