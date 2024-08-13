@@ -4,8 +4,8 @@ I2C Multiplexr 7 channels to pull 14 x BME280 sensors
 Enable i2c on Raspberry.  https://www.home-assistant.io/common-tasks/os#enable-i2c  
 Requiments Rpi.GPIO in custom componets. https://github.com/thecode/ha-rpi_gpio  
 
+Copy files to  /config/python_scripts/multi_bme280
 
-shell_command:
 #i2c Channel 4  BME280 Sensor 0x76
 sensor_4_0x76 Change values to suit your Sensors
 sensor_0_0x76
