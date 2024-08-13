@@ -4,13 +4,18 @@ I2C Multiplexr 7 channels to pull 14 x BME280 sensors
 Enable i2c on Raspberry.  https://www.home-assistant.io/common-tasks/os#enable-i2c  
 Requiments Rpi.GPIO in custom componets. https://github.com/thecode/ha-rpi_gpio  
 
-Add to configuration.yaml  bme280_multiplexer: 'python3 /config/python_scripts/multi_bme280/bme280_multiplexer.py' 
 
-
+shell_command:
 #i2c Channel 4  BME280 Sensor 0x76
-sensor_4_0x76']['humidity']
+sensor_4_0x76 Change values to suit your Sensors
+sensor_0_0x76
+sensor_0_0x77
 
+Add to configuration.yaml 
+
+shell_command:
 bme280_multiplexer: 'python3 /config/python_scripts/multi_bme280/bme280_multiplexer.py' 
+
 command_line:
   - sensor: 
       name: BME 280 Pressure Sensor 
@@ -32,6 +37,7 @@ command_line:
       value_template: "{{ value_json['sensor_4_0x77']['temperature'] }}"
       unit_of_measurement: "°C"
       scan_interval: 10
+    
     ### Channel 5, BME = 0x76
   - sensor: 
       name: BME 280 Pressure Sensor 
@@ -54,7 +60,7 @@ command_line:
       unit_of_measurement: "°C"
       scan_interval: 10
     
-Add a automation to refresh sensors
+Add a automation to refresh sensors.
 
 alias: Pool BME280
 description: ""
